@@ -1,5 +1,6 @@
 ## Design and Implementation of a Multidocument Retrieval Agent Using LlamaIndex
-
+## NAME :GAYATHRI K
+## REG NO: 212223230061
 ### AIM:
 To design and implement a multidocument retrieval agent using LlamaIndex to extract and synthesize information from multiple research articles, and to evaluate its performance by testing it with diverse queries, analyzing its ability to deliver concise, relevant, and accurate responses.
 
@@ -66,6 +67,8 @@ response = agent.query(
 ### OUTPUT:
 <img width="1027" height="747" alt="image" src="https://github.com/user-attachments/assets/a1d70843-581d-4df0-96e1-0c5e4f3f6286" />
 <img width="1036" height="852" alt="image" src="https://github.com/user-attachments/assets/b9316340-bbff-46f1-90f4-db9b48e6868d" />
+<img width="912" height="796" alt="image" src="https://github.com/user-attachments/assets/d48fe495-09c2-48e2-9842-9055eafb176d" />
+
 
 ### RESULT:
 The system successfully retrieves and synthesizes relevant information from multiple documents, providing concise and relevant answers to the user's query. Performance is evaluated based on the accuracy, relevance, and coherence of the responses.
