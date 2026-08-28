@@ -32,9 +32,9 @@ urls = [
 ]
 
 papers = [
-    "genai1.pdf",
-"genai2.pdf",
-"genai3.pdf",
+    "AIeffectiveness.pdf",
+    "foundationofai.pdf",
+    "learningwithai.pdf",
 ]
 
 from utils import get_doc_tools
@@ -59,15 +59,19 @@ agent_worker = FunctionCallingAgentWorker.from_tools(
     verbose=True
 )
 agent = AgentRunner(agent_worker)
-response = agent.query(
-    "can u tell me  how well an AI agent performs tool calling and how to train it more efficiently."
-    "and tell me the effectiveness of this"
-)
+response = agent.query("Give me a summary of AIeffectiveness document")
+print(str(response))
+
+response = agent.query("Give me a summary of foundationofai and learningwithai document")
+print(str(response))
+
+response = agent.query("Tell me what are the major areas focused on foundationofai document")
+print(str(response))
 ```
 ### OUTPUT:
-<img width="1027" height="747" alt="image" src="https://github.com/user-attachments/assets/a1d70843-581d-4df0-96e1-0c5e4f3f6286" />
-<img width="1036" height="852" alt="image" src="https://github.com/user-attachments/assets/b9316340-bbff-46f1-90f4-db9b48e6868d" />
-<img width="912" height="796" alt="image" src="https://github.com/user-attachments/assets/d48fe495-09c2-48e2-9842-9055eafb176d" />
+<img width="940" height="352" alt="image" src="https://github.com/user-attachments/assets/dd5d732e-dc78-4c3a-aa35-c599eb946608" />
+<img width="668" height="625" alt="image" src="https://github.com/user-attachments/assets/6f192f2e-9de2-4bb1-b3a8-1c6c2f60840a" />
+<img width="960" height="385" alt="image" src="https://github.com/user-attachments/assets/22992b53-e2a2-4e5f-9173-d1421076a74a" />
 
 
 ### RESULT:
